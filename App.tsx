@@ -94,21 +94,21 @@ const PROFESSORS: Professor[] = [
     name: 'Frank Sánchez',
     role: 'CEO',
     company: 'Instituto Europeo del Lujo',
-    image: 'https://www.ielujo.com/wp-content/uploads/2019/07/1685117491039.jpg',
+    image: '/frank-sanchez.jpg',
     linkedin: 'https://www.linkedin.com/in/franks%C3%A1nchezielujoluxurymexico/'
   },
   {
     name: 'Amparo de la Concepción',
     role: 'Directora Académica',
     company: 'Instituto Europeo del Lujo',
-    image: 'https://www.ielujo.com/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-07-at-11.10.57-e1691428317980.jpeg',
+    image: '/amparo-delaconcepcion.jpg',
     linkedin: 'https://www.linkedin.com/in/amparodelaconcepcion/'
   },
   {
     name: 'Julio César González',
     role: 'Account Director, Global Luxury & Lifestyle, Central America & México',
     company: 'IHG Hotels & Resorts',
-    image: 'https://www.ielujo.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-18-at-18.47.00.jpeg',
+    image: '/julio-cesar-gonzalez.jpg',
     linkedin: 'https://www.linkedin.com/in/julio-c%C3%A9sar-gonz%C3%A1lez-68053973/'
   },
   {
@@ -286,7 +286,7 @@ const Navbar: React.FC = () => {
         {/* Identidad IELujo */}
         <div className="flex items-center gap-3">
           <img
-            src="https://www.ielujo.com/wp-content/uploads/2025/12/0a0233b6-e5e5-4399-80ff-a83af1012adc.png"
+            src="/logo-ielujo.png"
             alt="IELujo Logo"
             className="h-9 md:h-11 w-auto"
           />
@@ -319,7 +319,7 @@ const Navbar: React.FC = () => {
         {/* Logo Anáhuac */}
         <div className="flex items-center gap-4">
           <img
-            src="https://www.ielujo.com/wp-content/uploads/2025/12/Logo-Qnahuac-Mexico-sin-fondo-c.png"
+            src="/logo-anahuac.png"
             alt="Logo Universidad Anáhuac México"
             className="h-10 md:h-14 w-auto object-contain transition-all duration-300"
           />
