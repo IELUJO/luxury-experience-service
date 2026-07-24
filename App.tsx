@@ -120,11 +120,15 @@ const PROFESSORS: Professor[] = [
   }
 ];
 
-const TESTIMONIALS = [
-  { id: 'oe9yA9zaiDE', title: 'Testimonial de Rebeca Vázquez' },
-  { id: 'Zt5Y_fA81X8', title: 'Testimonial de Germán Gómez · Diplomado Luxury Sales' },
-  { id: 'cx1Rw0kWaLE', title: 'Alejandro Rossano · Diplomado Luxury Sales 2024' }
-];
+// Citas de texto extraidas de los testimonios en video de alumnos de los diplomados IELujo.
+// Rellenar con los textos y nombres que proporcione Amparo.
+interface Testimonial {
+  quote: string;
+  name: string;
+  program: string;
+}
+
+const TESTIMONIALS: Testimonial[] = [];
 
 const PROFILES: TargetProfile[] = [
   { title: 'Directivos de Experiencia de Cliente', description: 'Responsables de Experiencia de Cliente, Servicio al Cliente y Calidad en marcas de lujo o aspiracionales.' },
@@ -654,23 +658,21 @@ const App: React.FC = () => {
           <p className="text-gray-400 font-light leading-relaxed max-w-3xl -mt-8 mb-12 italic">
             "Valoración media de 9.46/10 otorgada en cuestionario anónimo por los alumnos de las 22 ediciones de nuestros diplomados."
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            {TESTIMONIALS.map((v) => (
-              <div key={v.id} className="bg-[#111] border border-white/5">
-                <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                  <iframe
-                    className="absolute inset-0 w-full h-full"
-                    src={`https://www.youtube.com/embed/${v.id}`}
-                    title={v.title}
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+          {TESTIMONIALS.length > 0 && (
+            <div className="grid md:grid-cols-3 gap-8">
+              {TESTIMONIALS.map((t, idx) => (
+                <div key={idx} className="bg-[#111] border border-white/5 p-8 flex flex-col">
+                  {/* opacidad fundida en rgba: `gold` es clase CSS manual y no admite /opacity de Tailwind */}
+                  <span className="font-display text-5xl leading-none select-none" style={{ color: 'rgba(212,175,55,0.4)' }}>"</span>
+                  <p className="text-gray-300 font-light leading-relaxed mt-2 mb-6">{t.quote}</p>
+                  <div className="mt-auto pt-4 border-t border-white/10">
+                    <p className="text-white font-semibold">{t.name}</p>
+                    <p className="text-gold text-xs uppercase tracking-wider mt-1">{t.program}</p>
+                  </div>
                 </div>
-                <p className="text-gray-400 text-sm font-light p-4">{v.title}</p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
