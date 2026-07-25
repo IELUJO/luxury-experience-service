@@ -306,10 +306,11 @@ const Navbar: React.FC = () => {
 
         {/* Identidad IELujo */}
         <div className="flex items-center gap-3">
+          {/* Escudo IEL oficial (gris sobre transparente): invertido a blanco para el navbar negro */}
           <img
             src="/logo-ielujo.png"
             alt="IELujo Logo"
-            className="h-9 md:h-11 w-auto"
+            className="h-9 md:h-11 w-auto brightness-0 invert"
           />
           <div className="flex flex-col">
             <span className="text-md md:text-lg font-display font-bold tracking-widest text-[#d4af37] leading-tight">IELujo</span>
@@ -339,10 +340,11 @@ const Navbar: React.FC = () => {
 
         {/* Logo Anáhuac */}
         <div className="flex items-center gap-4">
+          {/* Lockup oficial Anáhuac (marrón sobre transparente): invertido a blanco para el navbar negro */}
           <img
             src="/logo-anahuac.png"
             alt="Logo Universidad Anáhuac México"
-            className="h-10 md:h-14 w-auto object-contain transition-all duration-300"
+            className="h-10 md:h-14 w-auto object-contain transition-all duration-300 brightness-0 invert"
           />
           <button className="lg:hidden text-white ml-2" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
