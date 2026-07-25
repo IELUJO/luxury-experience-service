@@ -441,7 +441,7 @@ const App: React.FC = () => {
         <div className="absolute inset-0 z-0 bg-[#050505]">
           <img
             src="/hero.jpg"
-            alt="Alumnos del diplomado en una sesión híbrida en Richemont"
+            alt="Suite de hotel de lujo al atardecer, con vistas a la ciudad"
             className="w-full h-full object-cover brightness-110"
           />
           <div
