@@ -120,15 +120,36 @@ const PROFESSORS: Professor[] = [
   }
 ];
 
-// Citas de texto extraidas de los testimonios en video de alumnos de los diplomados IELujo.
-// Rellenar con los textos y nombres que proporcione Amparo.
+// Citas textuales de los testimonios publicos de alumnos (canal de YouTube del IELujo),
+// tomadas del documento de casos de exito del instituto.
 interface Testimonial {
   quote: string;
   name: string;
   program: string;
 }
 
-const TESTIMONIALS: Testimonial[] = [];
+const TESTIMONIALS: Testimonial[] = [
+  {
+    quote: 'Haber tomado este diplomado me ha permitido observar marcadas diferencias y muy claras respecto de lo que es este segmento de lujo, la forma de llevarlo, la forma de planearlo y cómo medirlo.',
+    name: 'Sueyin Ahelby',
+    program: 'Diplomado Luxury Sales'
+  },
+  {
+    quote: 'Lo hice todo en línea y la verdad es que está muy dinámico y muy versátil porque lo puedes ver a la hora que tú puedas. Me sentí muy cómodo y aprendí bastante.',
+    name: 'David Bissu',
+    program: 'Diplomado Luxury Sales'
+  },
+  {
+    quote: 'Es un contenido que definitivamente no puedes encontrar en ningún otro lado, no existe realmente dentro de la oferta educativa en México; es una excelente inversión de tiempo y de esfuerzo.',
+    name: 'Cesia Rojas',
+    program: 'Diplomado Luxury Sales'
+  },
+  {
+    quote: 'Algo clave para mí fueron los ponentes, ya que no solo te hablan sobre las marcas, también te hablan sobre el éxito que hay detrás de ellas y cómo lo han logrado.',
+    name: 'Rebeca Vázquez',
+    program: 'Diplomado Luxury Management'
+  }
+];
 
 const PROFILES: TargetProfile[] = [
   { title: 'Directivos de Experiencia de Cliente', description: 'Responsables de Experiencia de Cliente, Servicio al Cliente y Calidad en marcas de lujo o aspiracionales.' },
@@ -659,7 +680,7 @@ const App: React.FC = () => {
             "Valoración media de 9.46/10 otorgada en cuestionario anónimo por los alumnos de las 22 ediciones de nuestros diplomados."
           </p>
           {TESTIMONIALS.length > 0 && (
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               {TESTIMONIALS.map((t, idx) => (
                 <div key={idx} className="bg-[#111] border border-white/5 p-8 flex flex-col">
                   {/* opacidad fundida en rgba: `gold` es clase CSS manual y no admite /opacity de Tailwind */}
