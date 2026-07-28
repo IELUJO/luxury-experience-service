@@ -76,7 +76,7 @@ const OFERTAS: Oferta[] = [
   },
   {
     title: 'Modalidad híbrida',
-    description: 'Online en vivo por Zoom, con 3 sesiones híbridas experienciales: el Rancho Atalaya y visitas inmersivas a flagship stores de lujo y un hotel de alta gama.',
+    description: 'Online en vivo por Zoom, con 2 clases híbridas experienciales: una sesión en el Rancho Atalaya y otra con visitas inmersivas a flagship stores de lujo y un hotel de alta gama.',
     icon: <MonitorPlay className="w-6 h-6" />
   }
 ];
@@ -595,28 +595,23 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Experiencias en vivo (3 sesiones híbridas experienciales, según el brochure 2027) */}
+      {/* Experiencias en vivo: 2 clases híbridas (Rancho Atalaya + flagships/hotel), según el brochure 2027 */}
       <section className="py-24 bg-[#0a0a0a] border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionTitle subtitle="Experiencias sobre el terreno" title="Tres experiencias en vivo" light />
+          <SectionTitle subtitle="Experiencias sobre el terreno" title="Dos clases híbridas en vivo" light />
           <p className="text-gray-400 font-light leading-relaxed max-w-3xl -mt-8 mb-12">
-            Las sesiones híbridas del diplomado están concebidas como experiencias inolvidables y exclusivas, accesibles únicamente a través de este diplomado: el servicio de lujo se entiende viviéndolo, no solo estudiándolo.
+            Las dos clases híbridas del diplomado están concebidas como experiencias inolvidables y exclusivas, accesibles únicamente a través de este diplomado: el servicio de lujo se entiende viviéndolo, no solo estudiándolo.
           </p>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-[#111] p-10 border border-white/5 hover:border-gold/30 transition-all duration-500">
               <Compass className="text-gold w-8 h-8 mb-6" />
               <h3 className="font-display text-2xl text-white mb-3">Rancho Atalaya</h3>
-              <p className="text-gray-400 font-light leading-relaxed">Una experiencia exclusiva en el Rancho Atalaya, donde la hospitalidad y el servicio de lujo se viven en primera persona.</p>
+              <p className="text-gray-400 font-light leading-relaxed">Una sesión en el Rancho Atalaya: la hospitalidad y el servicio de lujo vividos en primera persona.</p>
             </div>
             <div className="bg-[#111] p-10 border border-white/5 hover:border-gold/30 transition-all duration-500">
               <Sparkles className="text-gold w-8 h-8 mb-6" />
-              <h3 className="font-display text-2xl text-white mb-3">Flagship stores de lujo</h3>
-              <p className="text-gray-400 font-light leading-relaxed">Visita inmersiva a flagship stores de lujo: la puesta en escena, el ritual de venta y el clienteling observados sobre el terreno.</p>
-            </div>
-            <div className="bg-[#111] p-10 border border-white/5 hover:border-gold/30 transition-all duration-500">
-              <Award className="text-gold w-8 h-8 mb-6" />
-              <h3 className="font-display text-2xl text-white mb-3">Hotel de alta gama</h3>
-              <p className="text-gray-400 font-light leading-relaxed">Visita inmersiva a un hotel de alta gama: protocolos, estándares y momentos de la verdad de la hospitalidad de lujo.</p>
+              <h3 className="font-display text-2xl text-white mb-3">Flagship stores y hotel de alta gama</h3>
+              <p className="text-gray-400 font-light leading-relaxed">Una sesión con visitas inmersivas a flagship stores de lujo y un hotel de alta gama: la puesta en escena, el ritual de venta y los momentos de la verdad de la hospitalidad, observados sobre el terreno.</p>
             </div>
           </div>
         </div>
@@ -726,7 +721,7 @@ const App: React.FC = () => {
                   <div>
                     <h4 className="font-bold text-lg">Duración & Modalidad</h4>
                     <p className="text-gray-600 font-light">80 horas · Online en vivo por Zoom</p>
-                    <p className="text-gray-600 font-light">11 sesiones, incluyendo 3 sesiones híbridas experienciales</p>
+                    <p className="text-gray-600 font-light">11 sesiones, incluyendo 2 clases híbridas experienciales</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
