@@ -100,14 +100,14 @@ const PROFESSORS: Professor[] = [
   {
     name: 'Amparo de la Concepción',
     role: 'Directora Académica',
-    company: 'Instituto Europeo del Lujo',
+    company: 'IELujo · ex Clase Azul México, Tiffany, Loewe, Montblanc y Dior',
     image: '/amparo-delaconcepcion.jpg',
     linkedin: 'https://www.linkedin.com/in/amparodelaconcepcion/'
   },
   {
     name: 'Julio César González',
-    role: 'Account Director, Global Luxury & Lifestyle, Central America & México',
-    company: 'IHG Hotels & Resorts',
+    role: 'Regional Director, Global Luxury & Lifestyle Sales, Latin America',
+    company: 'Accor',
     image: '/julio-cesar-gonzalez.jpg',
     linkedin: 'https://www.linkedin.com/in/julio-c%C3%A9sar-gonz%C3%A1lez-68053973/'
   },
