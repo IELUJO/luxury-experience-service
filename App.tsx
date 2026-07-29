@@ -36,8 +36,8 @@ const MASTER_URL = "https://master-lujo.ielujo.com";
 
 const RAZONES: Razon[] = [
   {
-    title: 'El producto se copia. El servicio, no.',
-    description: 'Dos boutiques pueden vender el mismo bolso al mismo precio. La diferencia entre la que factura y la que no está en la experiencia. Este diplomado se centra en esa diferencia.'
+    title: 'La ventaja competitiva reside en el servicio y la experiencia que ofreces.',
+    description: 'No se trata de que no falle nada sino de ser inolvidable.'
   },
   {
     title: 'Metodología, no inspiración',
@@ -61,12 +61,12 @@ const OFERTAS: Oferta[] = [
   },
   {
     title: 'Enfoque multisectorial',
-    description: 'Retail, hotelería, alta gastronomía, wellness, joyería, travel retail, inmobiliaria, automoción y banca privada. El servicio de lujo se aprende cruzando sectores, no encerrado en uno.',
+    description: 'Retail, Hotelería, Alta Gastronomía, Wellness, Joyería y Relojería, Travel Retail, Inmobiliaria, Automoción y Banca Privada. El servicio de lujo se aprende analizando las mejores prácticas de los sectores y adaptándolas a tu empresa.',
     icon: <Globe className="w-6 h-6" />
   },
   {
     title: 'Profesores en activo',
-    description: 'Aprenderás de profesionales en activo en el sector del lujo, no de académicos de escritorio.',
+    description: 'Aprenderás de los mejores profesionales con gran experiencia en el sector del lujo, no de académicos generalistas.',
     icon: <Briefcase className="w-6 h-6" />
   },
   {
@@ -113,7 +113,7 @@ const PROFESSORS: Professor[] = [
   },
   {
     name: 'Adrián Aguirre Robles',
-    role: 'Customer Experience and Operations Director',
+    role: 'Commercial and CX Director',
     company: 'ALE MARINE',
     image: '/adrian-aguirre.png',
     linkedin: 'https://www.linkedin.com/in/adri%C3%A1n-aguirre-robles-bb25a51a/'
@@ -125,29 +125,24 @@ const PROFESSORS: Professor[] = [
 interface Testimonial {
   quote: string;
   name: string;
-  program: string;
 }
 
 const TESTIMONIALS: Testimonial[] = [
   {
     quote: 'Haber tomado este diplomado me ha permitido observar marcadas diferencias y muy claras respecto de lo que es este segmento de lujo, la forma de llevarlo, la forma de planearlo y cómo medirlo.',
-    name: 'Sueyin Ahelby',
-    program: 'Diplomado Luxury Sales'
+    name: 'Sueyin Ahelby'
   },
   {
     quote: 'Lo hice todo en línea y la verdad es que está muy dinámico y muy versátil porque lo puedes ver a la hora que tú puedas. Me sentí muy cómodo y aprendí bastante.',
-    name: 'David Bissu',
-    program: 'Diplomado Luxury Sales'
+    name: 'David Bissu'
   },
   {
     quote: 'Es un contenido que definitivamente no puedes encontrar en ningún otro lado, no existe realmente dentro de la oferta educativa en México; es una excelente inversión de tiempo y de esfuerzo.',
-    name: 'Cesia Rojas',
-    program: 'Diplomado Luxury Sales'
+    name: 'Cesia Rojas'
   },
   {
     quote: 'Algo clave para mí fueron los ponentes, ya que no solo te hablan sobre las marcas, también te hablan sobre el éxito que hay detrás de ellas y cómo lo han logrado.',
-    name: 'Rebeca Vázquez',
-    program: 'Diplomado Luxury Management'
+    name: 'Rebeca Vázquez'
   }
 ];
 
@@ -538,7 +533,7 @@ const App: React.FC = () => {
             </div>
             <div className="flex gap-5 items-start">
               <div className="w-12 h-12 rounded-full border border-gold flex items-center justify-center flex-shrink-0"><GraduationCap className="text-gold w-5 h-5" /></div>
-              <p className="text-gray-300 font-light leading-relaxed">Obtener la primera certificación oficial en Experiencias y Servicio de Lujo de la Universidad Anáhuac e IELujo.</p>
+              <p className="text-gray-300 font-light leading-relaxed">Obtener la primera certificación oficial en Experiencias y Servicio de Lujo que existe en México, de la mano del Instituto Europeo del Lujo y la Universidad Anáhuac.</p>
             </div>
           </div>
         </div>
@@ -580,7 +575,7 @@ const App: React.FC = () => {
       {/* A quién va dirigido */}
       <section className="py-24 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionTitle subtitle="A quién va dirigido" title="Para quienes viven del cliente exigente" light />
+          <SectionTitle subtitle="A quién va dirigido" title="A los que atienden a exigentes Clientes de Alto Poder Adquisitivo" light />
           <div className="grid md:grid-cols-2 gap-6">
             {PROFILES.map((profile, idx) => (
               <div key={idx} className="flex gap-6 p-8 border border-white/5 bg-[#0a0a0a] hover:bg-[#0c0c0c] transition-all">
@@ -620,7 +615,7 @@ const App: React.FC = () => {
       {/* Profesorado */}
       <section className="py-24 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6">
-          <SectionTitle subtitle="Profesorado" title="Profesionales en activo del sector" light />
+          <SectionTitle subtitle="Profesorado" title="Profesionales reconocidos del sector del Lujo" light />
           <p className="text-gray-400 font-light leading-relaxed max-w-3xl -mt-8 mb-12">
             Nuestro claustro está formado por profesionales expertos, escogidos en virtud de los temas a cubrir en cada uno de nuestros diplomados.
           </p>
@@ -667,9 +662,9 @@ const App: React.FC = () => {
       <section className="py-24 bg-[#050505]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <Award className="text-gold w-10 h-10 mx-auto mb-8" />
-          <h2 className="font-display text-3xl md:text-4xl text-white mb-6">Tu Manual de Servicio, <span className="gold-gradient">no el nuestro</span></h2>
+          <h2 className="font-display text-3xl md:text-4xl text-white mb-6">Crearás tu propio <span className="gold-gradient">Manual de Servicio de Lujo</span></h2>
           <p className="text-gray-400 font-light leading-relaxed text-lg max-w-3xl mx-auto">
-            Desde el primer módulo trabajas sobre tu propia marca o proyecto. Al terminar, tienes un Manual de Servicio completo: estándares, rituales, protocolos de recuperación y sistema de medición. Un documento de trabajo que puedes implantar el lunes siguiente.
+            Desde el primer módulo trabajas sobre tu propia marca o proyecto. Al terminar, tienes un Manual de Servicio de Lujo completo donde anclar tu ventaja competitiva: estándares, rituales, protocolos de recuperación y sistema de medición. Un documento de trabajo que puedes implantar inmediatamente.
           </p>
         </div>
       </section>
@@ -687,10 +682,9 @@ const App: React.FC = () => {
                 <div key={idx} className="bg-[#111] border border-white/5 p-8 flex flex-col">
                   {/* opacidad fundida en rgba: `gold` es clase CSS manual y no admite /opacity de Tailwind */}
                   <span className="font-display text-5xl leading-none select-none" style={{ color: 'rgba(212,175,55,0.4)' }}>"</span>
-                  <p className="text-gray-300 font-light leading-relaxed mt-2 mb-6">{t.quote}</p>
+                  <p className="text-gray-300 font-light leading-relaxed italic mt-2 mb-6">{t.quote}</p>
                   <div className="mt-auto pt-4 border-t border-white/10">
                     <p className="text-white font-semibold">{t.name}</p>
-                    <p className="text-gold text-xs uppercase tracking-wider mt-1">{t.program}</p>
                   </div>
                 </div>
               ))}
