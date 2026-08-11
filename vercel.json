@@ -1,0 +1,1 @@
+{"redirects":[{"source":"/:path*","has":[{"type":"host","value":"luxury-experience-service.vercel.app"}],"destination":"https://luxury-experience.ielujo.com/:path*","permanent":true}]}
